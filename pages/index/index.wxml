@@ -1,7 +1,13 @@
 <view class="indexContainer">
   <image src="../../images/nvsheng.jpg" class="avatarUrl"></image>
-  <text class="userName">我爱你</text>
-  <view class="goStudy">
+  <text class="userName">{{msg}}</text>
+  <!-- bind+事件名：进行冒泡   catch+事件名：不允许冒泡 -->
+  <!-- <view class="goStudy" bindtap="handleParent">
+    <text bindtap="handleChild">开启我们的幸福之旅</text>
+  </view> -->
+
+  <!-- 点击 这个组件进行路由跳转 -->
+  <view class="goStudy" catchtap="toLogs">
     <text>开启我们的幸福之旅</text>
   </view>
 </view>
